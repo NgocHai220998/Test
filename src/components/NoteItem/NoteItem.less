@@ -1,0 +1,33 @@
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #212121!important;
+
+    .note-item {
+      display: flex;
+      align-items: center;
+  
+      .note-tag {
+        margin: 10px;
+        white-space: normal !important;
+        max-width: 115px;
+        word-break: break-all;
+      }
+    }
+  
+    @media @tablet {
+      .note-item {
+        .note-tag {
+          max-width: 500px;
+        }
+      }
+    }
+  
+    @media @desktop {
+      .note-item {
+        .note-tag {
+          max-width: 100%;
+        }
+      }
+    }
+  }
